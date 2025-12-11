@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Aurora skin (randomly selected vibrant gradient style)
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0b1021 !default; // deep midnight
+$text-color: #e6f0ff !default; // icy white
+$primary-color: #7af0d5 !default; // minty neon
+$border-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color: mix(#000, $background-color, 25%) !default;
+$code-background-color-dark: mix(#000, $background-color, 30%) !default;
+$form-background-color: mix(#0d1a2f, $background-color, 40%) !default;
+$footer-background-color: mix($primary-color, #000, 15%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $link-color, 30%) !default;
+$link-color-visited: mix(#5cd1ff, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#7af0d5, $text-color, 35%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 40%) !default;
+
+/* notices */
+$notice-background-mix: 92% !default;
+$code-notice-background-mix: 96% !default;
+
+/* syntax highlighting (base16 inspired) */
+$base00: #0b1021 !default; // background
+$base01: #151b30 !default;
+$base02: #1f2842 !default;
+$base03: #2b3554 !default;
+$base04: #9ad7ff !default; // muted text
+$base05: #e6f0ff !default; // main text
+$base06: #f3f7ff !default;
+$base07: #ffffff !default;
+$base08: #ff6fa5 !default; // strings
+$base09: #ffb86c !default; // numbers
+$base0a: #ffe59f !default; // keywords
+$base0b: #7af0d5 !default; // functions
+$base0c: #8be9fd !default; // operators
+$base0d: #80c1ff !default; // identifiers
+$base0e: #caa1ff !default; // annotations
+$base0f: #ff9f80 !default; // constants
+
+/* Gradient and glow accents */
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(122, 240, 213, 0.12), transparent 35%),
+              radial-gradient(circle at 80% 10%, rgba(202, 161, 255, 0.12), transparent 30%),
+              radial-gradient(circle at 30% 80%, rgba(128, 193, 255, 0.12), transparent 32%),
+              #0b1021;
+  color: $text-color;
+}
+
+.page__content a,
+.page__content a:visited {
+  text-shadow: 0 0 8px rgba(122, 240, 213, 0.45);
+}
+
+.masthead,
+.nav__list {
+  background: linear-gradient(90deg, rgba(11, 16, 33, 0.95), rgba(13, 26, 47, 0.9));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.pagination--pager {
+  color: $background-color;
+  background: linear-gradient(135deg, #7af0d5, #80c1ff);
+  border-color: transparent;
+}
+
+.author__avatar img {
+  box-shadow: 0 0 20px rgba(122, 240, 213, 0.55);
+}
